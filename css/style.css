@@ -1,0 +1,155 @@
+/* ================================
+   ESTILO GERAL
+===================================*/
+body {
+  margin: 0;
+  background: #f6fdf6;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+/* ================================
+   CABEÇALHO
+===================================*/
+header {
+  background: #b5e3b5;
+  padding: 15px 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #2f5233;
+}
+
+.logo {
+  width: 60px;
+}
+
+/* NAV */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #2f5233;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #388e3c;
+}
+
+nav a.ativo {
+  color: #1b5e20;
+  border-bottom: 2px solid #1b5e20;
+}
+
+/* ================================
+   PÁGINAS
+===================================*/
+.book {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.page {
+  background: #fff;
+  border: 2px solid #ddd;
+  padding: 40px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.banner {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+/* ================================
+   FORMULÁRIOS
+===================================*/
+.campo {
+  margin-bottom: 15px;
+}
+
+form label {
+  font-weight: 600;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* BOTÃO */
+.btn {
+  background: #4caf50;
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #388e3c;
+}
+
+/* RODAPÉ */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #e8f5e9;
+  color: #333;
+}
+
+/* ================================
+   RESPONSIVO
+===================================*/
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .page {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .page {
+    padding: 15px;
+  }
+}
